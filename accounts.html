@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .sidebar table {
+            width: 100%;
+        }
+
+        .sidebar table td {
+            padding: 10px;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .sidebar button.selected {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .welcome-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <table>
+            <tr>
+                <td><button class="selected">Dashboard</button></td>
+            </tr>
+            <tr>
+                <td><button>Orders</button></td>
+            </tr>
+            <tr>
+                <td><button>Update Profile</button></td>
+            </tr>
+            <tr>
+                <td><button>My Address</button></td>
+            </tr>
+            <tr>
+                <td><button>Change Password</button></td>
+            </tr>
+            <tr>
+                <td><button>Logout</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="content">
+        <div class="welcome-box">
+            <h2>Hello, welcome</h2>
+        </div>
+    </div>
+</body>
+</html>

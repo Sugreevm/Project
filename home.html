@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.top-image {
+    width: 50%;
+    max-width: 600px;
+}
+
+.top-text {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.top-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.popular-categories {
+    padding: 20px;
+    text-align: center;
+}
+
+.popular-categories h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.category-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.products-section {
+    padding: 20px;
+}
+
+.product-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    width: 23%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.big-images-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.big-image {
+    position: relative;
+    width: 48%;
+}
+
+.big-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.image-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.image-text p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+}
+
+.new-arrivals {
+    padding: 20px;
+    text-align: center;
+}
+
+.new-arrivals h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.new-arrivals .product-grid {
+    justify-content: space-around;
+}
+
+</style>
+
+
+<body>
+    <section class="top-section">
+        <img src="img/home-img.png" alt="Fashion" class="top-image">
+        <div class="top-text">
+            <h1>Fashion treding <br><strong>Great Collections.</strong></h1>
+        </div>
+    </section>
+
+    <section class="popular-categories">
+        <h2>Popular Categories</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="img/category-1.jpg" alt="Category 1">
+                <p>Category 1</p>
+            </div>
+            <div class="category-item">
+                <img src="img/category-2.jpg" alt="Category 2">
+                <p>Category 2</p>
+            </div>
+            <div class="category-item">
+                <img src="img/category-3.jpg" alt="Category 3">
+                <p>Category 3</p>
+            </div>
+            <div class="category-item">
+                <img src="img/category-4.jpg" alt="Category 4">
+                <p>Category 4</p>
+            </div>
+            <div class="category-item">
+                <img src="img/category-5.jpg" alt="Category 5">
+                <p>Category 5</p>
+            </div>
+            <div class="category-item">
+                <img src="img/category-6.jpg" alt="Category 5">
+                <p>Category 5</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="product-buttons">
+            <button>Featured</button>
+            <button>Popular</button>
+            <button>New Added</button>
+        </div>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="img/product-1-1.jpg" alt="Product 1">
+                <p>Product 1</p>
+                <p>$10.00</p>
+            </div>
+            <div class="product-item">
+                <img src="img/product-2-1.jpg" alt="Product 2">
+                <p>Product 2</p>
+                <p>$20.00</p>
+            </div>
+            <div class="product-item">
+                <img src="img/product-3-1.jpg" alt="Product 3">
+                <p>Product 3</p>
+                <p>$30.00</p>
+            </div>
+            <div class="product-item">
+                <img src="img/product-4-1.jpg" alt="Product 4">
+                <p>Product 4</p>
+                <p>$40.00</p>
+            </div>
+            <div class="product-item">
+                <img src="img/product-5-1.jpg" alt="Product 4">
+                <p>Product 4</p>
+                <p>$40.00</p>
+            </div>
+            <div class="product-item">
+                <img src="img/product-6-1.jpg" alt="Product 4">
+                <p>Product 4</p>
+                <p>$40.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="big-images-section">
+        <div class="big-image">
+            <img src="img/deals-1.jpg" alt=" Deal Image 1">
+            <div class="image-text">
+                <h2>Offer Details 1</h2>
+                <p>Ends in: 12h 34m</p>
+            </div>
+        </div>
+        <div class="big-image">
+            <img src="img/deals-2.jpg" alt="Deal Image 2">
+            <div class="image-text">
+                <h2>Offer Details 2</h2>
+                <p>Ends in: 15h 20m</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="new-arrivals">
+        <h2>New Arrivals</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="img/product-1-1.jpg" alt="New Product 1">
+                <p>New Product 1</p>
+                <p>$50.00</p>
+            </div>
+            <div class="product-item">
+                <img src="img/product-2-1.jpg" alt="New Product 2">
+                <p>New Product 2</p>
+                <p>$60.00</p>
+            </div>
+            <div class="product-item">
+                <img src="img/product-3-1.jpg" alt="New Product 3">
+                <p>New Product 3</p>
+                <p>$70.00</p>
+            </div>
+            <div class="product-item">
+                <img src="img/product-4-1.jpg" alt="New Product 4">
+                <p>New Product 4</p>
+                <p>$80.00</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

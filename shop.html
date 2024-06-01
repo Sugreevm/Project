@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.shop-intro {
+    text-align: left;
+    margin: 20px;
+}
+
+.products-section .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product-item {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.product-item img {
+    width: 100%;
+    display: block;
+}
+
+.product-item .product-icons {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.product-item:hover .product-icons {
+    display: block;
+}
+
+.product-item .image1 {
+    display: block;
+}
+
+.product-item .image2 {
+    display: none;
+}
+
+.product-item:hover .image1 {
+    display: none;
+}
+
+.product-item:hover .image2 {
+    display: block;
+}
+
+.product-icons a {
+    margin: 0 5px;
+    color: #000;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+        <section class="shop-intro">
+            <h1>Shop</h1>
+            <p>We found 68 products</p>
+        </section>
+
+        <section class="products-section">
+            <div class="product-grid">
+
+                <div class="product-item">
+                    <img src="img/product-1-1.jpg" alt="Product 1" class="image1">
+                    <img src="img/product-1-2.jpg" alt="Product 1 Hover" class="image2">
+                    <div class="product-icons">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <p>Product 1</p>
+                    <p>$10.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/product-3-1.jpg" alt="Product 2" class="image1">
+                    <img src="img/product-3-2.jpg" alt="Product 2 Hover" class="image2">
+                    <div class="product-icons">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <p>Product 2</p>
+                    <p>$20.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/product-2-1.jpg" alt="Product 3" class="image1">
+                    <img src="img/product-2-2.jpg" alt="Product 3 Hover" class="image2">
+                    <div class="product-icons">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <p>Product 3</p>
+                    <p>$30.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/product-4-1.jpg" alt="Product 4" class="image1">
+                    <img src="img/product-4-2.jpg" alt="Product 4 Hover" class="image2">
+                    <div class="product-icons">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <p>Product 4</p>
+                    <p>$40.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/product-5-1.jpg" alt="Product 5" class="image1">
+                    <img src="img/product-5-2.jpg" alt="Product 5 Hover" class="image2">
+                    <div class="product-icons">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <p>Product 5</p>
+                    <p>$50.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/product-6-1.jpg" alt="Product 6" class="image1">
+                    <img src="img/product-6-2.jpg" alt="Product 6 Hover" class="image2">
+                    <div class="product-icons">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <p>Product 6</p>
+                    <p>$60.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/product-7-1.jpg" alt="Product 7" class="image1">
+                    <img src="img/product-7-2.jpg" alt="Product 7 Hover" class="image2">
+                    <div class="product-icons">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <p>Product 7</p>
+                    <p>$70.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/product-8-1.jpg" alt="Product 8" class="image1">
+                    <img src="img/product-8-2.jpg" alt="Product 8 Hover" class="image2">
+                    <div class="product-icons">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <p>Product 8</p>
+                    <p>$80.00</p>
+                </div>
+            </div>
+        </section>
+        <section class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </section>
+    </main>
+</body>
+</html>

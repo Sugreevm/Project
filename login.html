@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .login-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form, .create-account-form {
+    width: 45%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.login-form h2, .create-account-form h2 {
+    margin-top: 0;
+}
+
+.login-form form, .create-account-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label, .create-account-form label {
+    margin-top: 10px;
+}
+
+.login-form input, .create-account-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.login-form button, .create-account-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username">
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="create-account-form">
+            <h2>Create Account</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="username">Email:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <label for="username">Confirm Password:</label>
+                <input type="text" id="username" name="username">
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
